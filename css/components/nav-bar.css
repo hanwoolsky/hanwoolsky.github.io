@@ -1,0 +1,17 @@
+.top{
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 100px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+    height: 100px;
+    background-color: aqua;
+    position: fixed;
+    right: 0;
+}
