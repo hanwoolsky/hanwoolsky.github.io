@@ -1,0 +1,14 @@
+.assignments{
+    display: flex;
+    flex-direction: column;
+}
+
+.assignment{
+    display: flex;
+    align-items: center;
+}
+
+.highlight{
+    height: 20px;
+    background: linear-gradient(to top, #FFE400 50%, transparent 50%)
+}
