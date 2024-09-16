@@ -1,25 +1,17 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Neos &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+	<title>Hanwool's Homepage</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FREEHTML5.CO" />
+	<meta name="description" content="Hanwool's Homepage" />
+	<meta name="author" content="Hanwool Huh" />
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
 	<meta property="og:site_name" content=""/>
 	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
@@ -39,10 +31,6 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
 
 	</head>
 	<body>
@@ -55,7 +43,6 @@
 				<ul>
 					<li><a href="index.html">About</a></li>
 					<li><a href="Research.html">Research</a></li>
-					<li><a href="Projects.html">Projects</a></li>
 					<li><a href="Extra.html" class="active">Extra</a></li>
 					<li><a href="Contact.html">Contact</a></li>
 				</ul>
@@ -65,72 +52,145 @@
 	<div id="fh5co-work-section">
 		<div class="container">
 			<div class="row text-center">
+				<!-- 1. Computer Graphics Planet -->
 				<div class="col-md-4 col-sm-6">
 					<div class="fh5co-grid-work">
 						<div class="work-holder"><!--  / Github에 코드가 있는 모든 활동들 Web Page, APP, COVID Dashboard 등등 / 언어별 프로젝트? Github 링크? -->
-							<!-- Computer Graphics Planet -->
-							<a href="#"><img class="extra-img" src="images/CG_Earth.png" alt="Graphics"></a>
-							<a href="#" class="inner-overlay"><i class="icon-plus"></i></a>
+							<a href="#" class="open-modal" data-target="#projectModal1"><img class="extra-img" src="images/CG_Earth.png" alt="Graphics"></a>
+							<a href="#" class="inner-overlay open-modal" data-target="#projectModal1"><i class="icon-plus"></i></a>
 						</div>
 						<div class="desc">
 							<h3><a href="#">Computer Graphics</a></h3>
 						</div>
 					</div>
 				</div>
+				<!-- Modal -->
+				<div class="modal" id="projectModal1">
+					<div class="modal-content">
+						<span class="close" data-target="#projectModal1">&times;</span>
+						<h2>Computer Graphics</h2>
+						<p>Computer graphics is a fundamental tool for creating and manipulating visual media including games, animation, virtual reality and web.<br/>From implementing a simple 2D animation of circles, I developed my code to Geometric modeling of a 3D sphere,<br/>3D transformations with camera interaction and shading / textures / normal mapping.
+						<a href="https://github.com/hanwoolsky/Solar_System_Graphics" class="pop-up-overlay pop-up-overlay-color-2 text-center">source code</a><br/></p>
+						<iframe width = "600" height = "400" src = "./video/Moving_Circle.mp4"></iframe>
+            			<iframe width = "600" height = "400" src = "./video/Planet_in_Space.mp4"></iframe>
+            			<iframe width = "600" height = "400" src = "./video/Moving_Planet.mp4"></iframe>
+            			<iframe width = "600" height = "400" src = "./video/Nomal_Mapping_Earth.mp4"></iframe>
+            			<iframe width = "600" height = "400" src = "./video/Full_Solar_System.mp4"></iframe><br/>
+					</div>
+				</div>
+
+				<!-- 2. Computer Graphics Game -->
 				<div class="col-md-4 col-sm-6">
 					<div class="fh5co-grid-work">
 						<div class="work-holder">
-							<!-- Computer Graphics Game -->
-							<a href="#"><img class="extra-img" src="images/CG_Game.png" alt="Game"></a>
-							<a href="#" class="inner-overlay inner-overlay-2"><i class="icon-plus"></i></a>
+							<a href="#" class="open-modal" data-target="#projectModal2"><img class="extra-img" src="images/CG_Game.png" alt="Game"></a>
+							<a href="#" class="inner-overlay open-modal" data-target="#projectModal2"><i class="icon-plus"></i></a>
 						</div>
 						<div class="desc">
 							<h3><a href="#">Graphic Game</a></h3>
 						</div>
 					</div>
 				</div>
+				<!-- Modal -->
+				<div class="modal" id="projectModal2">
+					<div class="modal-content">
+						<span class="close" data-target="#projectModal2">&times;</span>
+						<h2>Graphic Game</h2>
+						<iframe width = "600" height = "400" src = "./video/NCSoft보내조_Presentation.mp4"></iframe><br/>
+						<p>Presenter : Hanwool Huh</p>
+						<p>The goal of this team project is implementing a game that uses OpenGL for main graphics API.
+						<a href="https://github.com/hanwoolsky/Woori-s_Adventure" class="pop-up-overlay pop-up-overlay-color-2 text-center">source code</a></p>
+					</div>
+				</div>
+
+				<!-- 3. 3D Modeling (Certification, NTU, Maya) -->
 				<div class="col-md-4 col-sm-6">
 					<div class="fh5co-grid-work">
 						<div class="work-holder">
-							<!-- 3D Modeling (Fusion 360, 자격증, NTU, Maya) -->
-							<a href="#"><img class="extra-img" src="images/3D_ME.jpg" alt="Work"></a>
-							<a href="#" class="inner-overlay inner-overlay-3"><i class="icon-plus"></i></a>
+							<a href="#" class="open-modal" data-target="#projectModal3"><img class="extra-img" src="images/3D/3D_ME.jpg" alt="Work"></a>
+							<a href="#" class="inner-overlay open-modal" data-target="#projectModal3"><i class="icon-plus"></i></a>
 						</div>
 						<div class="desc">
 							<h3><a href="#">3D Modeling</a></h3>
 						</div>
 					</div>
 				</div>
+				<!-- Modal -->
+				<div class="modal" id="projectModal3">
+					<div class="modal-content">
+						<span class="close" data-target="#projectModal3">&times;</span>
+						<h2>3D Modelling</h2>
+						<img class="modal-img" src="images/3D/little_prince_formula.jpg" alt="The Little Prince">
+						<img class="modal-img" src="images/3D/little_prince.jpg" alt="The Little Prince">
+						<p>When I first encountered 3D modeling, I was fascinated by how mathematical formulas could approximate and create real shapes.<br/>This experience inspired me to pursue a double major in software.</p>
+						
+						<img class="modal-img" src="images/3D/NTU_present.jpg" alt="Presentation">
+						<p>My interest in 3D printing led me to participate in a team project at Nanyang Technological University in Singapore.</p>
+						
+						<img class="modal-img" src="images/3D/dot_custom.png" alt="DOT" style="
+							border-top: 2px solid black; 
+							border-right: 0; 
+							border-bottom: 2px solid black; 
+							border-left: 0;
+						">
+						<img class="modal-img" src="images/3D/dot.jpg" alt="DOT">
+						<p>Created a Braille Display for the visually impaired, which earned me an award at a national 3D printing competition.</p>
+						
+						<p>What started as a simple interest in a program significantly influenced my career path, turning my small experiences into significant opportunities.<br/>This journey taught me that putting effort into even the smallest tasks can lead to unexpected and valuable opportunities.</p>
+					</div>
+				</div>
+
+				<!-- 4. Smart Medication Project -->
 				<div class="col-md-4 col-sm-6">
 					<div class="fh5co-grid-work">
 						<div class="work-holder">
-							<!-- Smart Medication Project -->
-							<a href="#"><img class="extra-img" src="images/portfolio_pic4.jpg" alt="Work"></a>
-							<a href="#" class="inner-overlay inner-overlay-4"><i class="icon-plus"></i></a>
+							<a href="#" class="open-modal" data-target="#projectModal4"><img class="extra-img" src="images/medication.png" alt="Work"></a>
+							<a href="#" class="inner-overlay open-modal" data-target="#projectModal4"><i class="icon-plus"></i></a>
 						</div>
 						<div class="desc">
 							<h3><a href="#">Smart Medication System</a></h3>
 						</div>
 					</div>
 				</div>
+				<!-- Modal -->
+				<div class="modal" id="projectModal4">
+					<div class="modal-content">
+						<span class="close" data-target="#projectModal4">&times;</span>
+						<h2>Smart Medication System</h2>
+						<iframe width = "600" height = "400" src = "./video/Team_4_Project_Video.mp4"></iframe><br/>
+						<p>I have observed instances where people forget to take their medication or unknowingly combine medications that should not be taken together,<br/> which can be dangerous. To address this issue, I developed a system that automatically records medication intake and provides information about the medications.</p>
+
+						<p>Presenter : Jaehun Jung</p>
+					</div>
+				</div>
+
+				<!-- 5. Book Publication -->
 				<div class="col-md-4 col-sm-6">
 					<div class="fh5co-grid-work">
 						<div class="work-holder">
-							<!-- Book Publication -->
-							<a href="#"><img class="extra-img" src="images/portfolio_pic5.jpg" alt="Work"></a>
-							<a href="#" class="inner-overlay inner-overlay-5"><i class="icon-plus"></i></a>
+							<a href="#" class="open-modal" data-target="#projectModal5"><img class="extra-img" src="images/Book.jpg" alt="Work"></a>
+							<a href="#" class="inner-overlay open-modal" data-target="#projectModal5"><i class="icon-plus"></i></a>
 						</div>
 						<div class="desc">
 							<h3><a href="#">Book Publication</a></h3>
 						</div>
 					</div>
 				</div>
+				<!-- Modal -->
+				<div class="modal" id="projectModal5">
+					<div class="modal-content">
+						<span class="close" data-target="#projectModal5">&times;</span>
+						<h2>Computer Graphics</h2>
+						<p>Here you can describe your project in detail. Explain the features, objectives, and any other relevant information about the Graphic Game project.</p>
+					</div>
+				</div>
+
+				<!-- 6. Hacking CTF (Web Security, Tistory, CTF) -->
 				<div class="col-md-4 col-sm-6">
 					<div class="fh5co-grid-work">
 						<div class="work-holder">
-							<!-- Hacking CTF -->
-							<a href="#"><img class="extra-img" src="images/portfolio_pic6.jpg" alt="Work"></a>
-							<a href="#" class="inner-overlay"><i class="icon-plus"></i></a>
+							<a href="#" class="open-modal"><img class="extra-img" src="images/portfolio_pic6.jpg" alt="Work"></a>
+							<a href="#" class="inner-overlay open-modal" data-target="#projectModal6"><i class="icon-plus"></i></a>
 						</div>
 						<div class="desc">
 							<h3><a href="#">Hacking</a></h3> <!-- Tistory URL -->
@@ -138,55 +198,24 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="fh5co-grid-work">
-						<div class="work-holder">
-							<a href="#"><img class="extra-img" src="images/portfolio_pic7.jpg" alt="Work"></a>
-							<a href="#" class="inner-overlay inner-overlay-2"><i class="icon-plus"></i></a>
-						</div>
-						<div class="desc">
-							<h3><a href="#">Work Title</a></h3>
-							<span>Illustration</span>
-						</div>
+				<!-- Modal -->
+				<div class="modal" id="projectModal6">
+					<div class="modal-content">
+						<span class="close" data-target="#projectModal6">&times;</span>
+						<h2>Computer Graphics</h2>
+						<p>Here you can describe your project in detail. Explain the features, objectives, and any other relevant information about the Graphic Game project.</p>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="fh5co-grid-work">
-						<div class="work-holder">
-							<a href="#"><img class="extra-img" src="images/portfolio_pic8.jpg" alt="Work"></a>
-							<a href="#" class="inner-overlay inner-overlay-3"><i class="icon-plus"></i></a>
-						</div>
-						<div class="desc">
-							<h3><a href="#">Work Title</a></h3>
-							<span>Print</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="fh5co-grid-work">
-						<div class="work-holder">
-							<a href="#"><img class="extra-img" src="images/portfolio_pic9.jpg" alt="Work"></a>
-							<a href="#" class="inner-overlay inner-overlay-4"><i class="icon-plus"></i></a>
-						</div>
-						<div class="desc">
-							<h3><a href="#">Work Title</a></h3>
-							<span>Card</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
+
 	<footer>
 		<div id="footer" class="fh5co-border-line">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center">
-						<p>Copyright 2016 Free Html5 <a href="#">Neos</a>. All Rights Reserved. <br>Made with <i class="icon-heart3 love"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="https://www.pexels.com/" target="_blank">Pexels</a> &amp; <a href="http://plmd.me/" target="_blank">PLMD</a> </p>
+						<p>Copyright 2016 Free Html5 Neos</p>
 						<p class="fh5co-social-icons">
 							<a href="https://github.com/hanwoolsky"><i class="icon-github-with-circle"></i></a>
-							<a href="#"><i class="icon-facebook-with-circle"></i></a>
-							<a href="#"><i class="icon-instagram-with-circle"></i></a>
 						</p>
 					</div>
 				</div>
@@ -209,6 +238,8 @@
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+
+	<script src="js/script.js"></script> > <!-- 내가 넣은 것 -->
 
 	</body>
 </html>
