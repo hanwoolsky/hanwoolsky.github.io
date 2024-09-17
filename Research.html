@@ -58,20 +58,57 @@
 
 	<div>
 		<h1>Computer Graphics</h1>
-		<img src = "images/Research/Boxcar.png" />
 		<h3>Approximating a boxcar-shaped function, resulting from overlapping lights, with a differentiable function.</h3>
-		<p>
-			When considering a light as a circle, overlapping circles create a function that is not differentiable.
-			If we think of the y-value as the brightness of the light, and consider two lights with the same brightness overlapping,
-			the resulting function will have a box-like shape due to the overlapping brightness.
+		<img src = "images/Research/1_glare.png" />
+		<p>Glare is an effect by stray lights from reflection between lens barrel and sensor surface.</p>
 
-			If it is possible to approximate the resulting function of thousands of overlapping lights, with unknown positions and brightness levels,
-			by a single differentiable function, then it would allow us to create a Glare Spread Function (which describes how light spreads)
-			without having to draw each individual light.
+		<img src = "images/Research/2_boxcar.png" />
+		<p>
+			If we imagine each circle as a light with a brightness value of one, the overlapping parts will have a brightness value of two.
+			Let's graph this, with the x-axis representing location and the y-axis representing brightness.
+			The resulting function will have a box-like shape, which is not differentiable.
+
+			If it is possible to approximate the resulting function of thousands of overlapping lights with unknown positions and brightness levels by a single differentiable function,
+			it would allow us to create a Glare Spread Function without having to draw each individual light.
 		</p>
-		<img src = "images/Research/Light1.png" />
-		<img src = "images/Research/Light2.png" />
-		<img src = "images/Research/Compare.png" />
+
+		<img src = "images/Research/3_fourier.png" />
+		<p>
+			I had come up with some ideas for using the Fourier Series.
+			The pink graph in the lower left is the boxcar function, while the blue graph in the upper right is the graph obtained using the Fourier series.
+			We can see that even with only five terms, we can approximate the given function.
+		</p>
+
+		<img src = "images/Research/4_reference.png" />
+		<img src = "images/Research/4_reference2.png" />
+		<p>
+			I created a glare reference using C++.
+		</p>
+
+		<img src = "images/Research/5_compare.png" />
+		<p>
+			We were able to confirm that the approximation is effective when using the Fourier series.
+		</p>
+
+		<img src = "images/Research/6_order1030.png" />
+		<img src = "images/Research/6_order50100.png" />
+		<img src = "images/Research/7_ringing.png" />
+		<p>
+			However, this also led to the inevitable ringing artifact, which is a band-like distortion caused by rapid changes in the signal.
+		</p>
+
+		<img src = "images/Research/8_fourier_deringing1030.png" />
+		<img src = "images/Research/8_fourier_deringing50100.png" />
+		<p>
+			To address this, I analyzed several methods, applied the Lanczos filter, and removed the ringing pattern.
+			The image above shows that the pattern was removed by applying the Lanczos filter along one axis.
+		</p>
+
+		<img src = "images/Research/9_four_der.png" />
+		<p>
+			This undergraduate research experience allowed me to apply mathematical ideas to solve problems in computer science
+			and provided me with the opportunity to analyze, compare, and apply various mathematical methods to address specific issues.
+		</p>
 	</div>
 
 	<footer>
