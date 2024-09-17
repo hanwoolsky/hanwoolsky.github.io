@@ -1,2 +1,2 @@
-video/Graphics_Presentation.mp4 filter=lfs diff=lfs merge=lfs -text
-video/Project_Video.mp4 filter=lfs diff=lfs merge=lfs -text
+#video/Graphics_Presentation.mp4 filter=lfs diff=lfs merge=lfs -text
+#video/Project_Video.mp4 filter=lfs diff=lfs merge=lfs -text
