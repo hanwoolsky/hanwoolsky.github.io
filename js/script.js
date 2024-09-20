@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (targetModal) {
                 targetModal.style.display = 'block';
 
-                const videoFrame = modal.querySelector('iframe');
+                const videoFrame = targetModal.querySelector('iframe');
                 const videoSrc = videoFrame.getAttribute('src'); // src
                 videoFrame.src = videoSrc; // set src
             }
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var targetModal = document.querySelector(targetModalId);
             if (targetModal) {
                 targetModal.style.display = 'none';
-                const videoFrame = modal.querySelector('iframe');
+                const videoFrame = targetModal.querySelector('iframe');
                 videoFrame.src = ''; // video pause
             }
         });
