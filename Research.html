@@ -30,6 +30,8 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
+	<link rel="stylesheet" href="css/screens/research.css"> <!-- custom -->
+
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -39,7 +41,7 @@
 	<header>
 		<div class="container text-center">
 			<div class="fh5co-navbar-brand">
-				<a class="fh5co-logo" href="index.html">Research</a>
+				<a class="fh5co-logo" href="Research.html">Research</a>
 			</div>
 			<nav id="fh5co-main-nav" role="navigation">
 				<ul>
@@ -52,63 +54,81 @@
 		</div>
 	</header>
 	<div class="owl-carousel owl-carousel1 owl-carousel-fullwidth fh5co-light-arrow animate-box" data-animate-effect="fadeIn">
-		<div class="item"><img src="images/Research/FourvsDer10.png" alt="image"></div>
-		<div class="item"><img src="images/Research/Order50.png" alt="image"></div>
+		<div class="item"><img src="images/Research/RFL_10.png" alt="image"></div>
+		<div class="item"><img src="images/Research/RFL_30.png" alt="image"></div>
+		<div class="item"><img src="images/Research/RFL_50.png" alt="image"></div>
+		<div class="item"><img src="images/Research/RFL_100.png" alt="image"></div>
 	</div>
 
 	<div>
-		<h1>Computer Graphics</h1>
-		<h3>Approximating a boxcar-shaped function, resulting from overlapping lights, with a differentiable function.</h3>
-		<img src = "images/Research/1_glare.png" />
-		<p>Glare is an effect by stray lights from reflection between lens barrel and sensor surface.</p>
+		<div class="research-text h1-text">Computer Graphics</div>
+		<div class="research-text h3-text">Approximating a boxcar-shaped function, resulting from overlapping lights, with a differentiable function.</div>
+		<div class="research">
+			<img class="research-img" src = "images/Research/1_glare.png" />
+			<div class="research-text h5-text">Glare is an effect by stray lights from reflection between lens barrel and sensor surface.</div>
+		</div>
 
-		<img src = "images/Research/2_boxcar.png" />
-		<p>
-			If we imagine each circle as a light with a brightness value of one, the overlapping parts will have a brightness value of two.
-			Let's graph this, with the x-axis representing location and the y-axis representing brightness.
-			The resulting function will have a box-like shape, which is not differentiable.
+		<div class="research">
+			<img class="research-img" src = "images/Research/2_boxcar.png" />
+			<div class="research-text h5-text">
+				If we imagine each circle as a light with a brightness value of one, the overlapping parts will have a brightness value of two.<br/>
+				Let's graph this, with the x-axis representing location and the y-axis representing brightness.<br/>
+				The resulting function will have a box-like shape, which is not differentiable.<br/>
+				<br/>
+				If it is possible to approximate the resulting function of thousands of overlapping lights with unknown positions and brightness levels by a single differentiable function,<br/>
+				it would allow us to create a Glare Spread Function without having to draw each individual light.
+			</div>
+		</div>
 
-			If it is possible to approximate the resulting function of thousands of overlapping lights with unknown positions and brightness levels by a single differentiable function,
-			it would allow us to create a Glare Spread Function without having to draw each individual light.
-		</p>
+		<div class="research">
+			<img class="research-img" src = "images/Research/3_fourier.png" />
+			<div class="research-text h5-text">
+				I had come up with some ideas for using the Fourier Series.<br/>
+				The pink graph in the lower left is the boxcar function, while the blue graph in the upper right is the graph obtained using the Fourier series.<br/>
+				We can see that even with only five terms, we can approximate the given function.
+			</div>
+		</div>
 
-		<img src = "images/Research/3_fourier.png" />
-		<p>
-			I had come up with some ideas for using the Fourier Series.
-			The pink graph in the lower left is the boxcar function, while the blue graph in the upper right is the graph obtained using the Fourier series.
-			We can see that even with only five terms, we can approximate the given function.
-		</p>
+		<div class="research">
+			<img class="research-img" src = "images/Research/4_reference.png" />
+			<img class="research-img" src = "images/Research/4_reference2.png" />
+			<div class="research-text h5-text">
+				I created a glare reference using C++.
+			</div>
+		</div>
 
-		<img src = "images/Research/4_reference.png" />
-		<img src = "images/Research/4_reference2.png" />
-		<p>
-			I created a glare reference using C++.
-		</p>
+		<div class="research">
+			<img class="research-img" src = "images/Research/5_compare.png" />
+			<div class="research-text h5-text">
+				We were able to confirm that the approximation is effective when using the Fourier series.
+			</div>
+		</div>
 
-		<img src = "images/Research/5_compare.png" />
-		<p>
-			We were able to confirm that the approximation is effective when using the Fourier series.
-		</p>
+		<div class="research">
+			<img class="research-img" src = "images/Research/6_order1030.png" />
+			<img class="research-img" src = "images/Research/6_order50100.png" />
+			<img class="research-img" src = "images/Research/7_ringing.png" />
+			<div class="research-text h5-text">
+				However, this also led to the inevitable ringing artifact, which is a band-like distortion caused by rapid changes in the signal.
+			</div>
+		</div>
 
-		<img src = "images/Research/6_order1030.png" />
-		<img src = "images/Research/6_order50100.png" />
-		<img src = "images/Research/7_ringing.png" />
-		<p>
-			However, this also led to the inevitable ringing artifact, which is a band-like distortion caused by rapid changes in the signal.
-		</p>
+		<div class="research">
+			<img class="research-img" src = "images/Research/8_fourier_deringing1030.png" />
+			<img class="research-img" src = "images/Research/8_fourier_deringing50100.png" />
+			<div class="research-text h5-text">
+				To address this, I analyzed several methods, applied the Lanczos filter, and removed the ringing pattern.<br/>
+				The image above shows that the pattern was removed by applying the Lanczos filter along one axis.
+			</div>
+		</div>
 
-		<img src = "images/Research/8_fourier_deringing1030.png" />
-		<img src = "images/Research/8_fourier_deringing50100.png" />
-		<p>
-			To address this, I analyzed several methods, applied the Lanczos filter, and removed the ringing pattern.
-			The image above shows that the pattern was removed by applying the Lanczos filter along one axis.
-		</p>
-
-		<img src = "images/Research/9_four_der.png" />
-		<p>
-			This undergraduate research experience allowed me to apply mathematical ideas to solve problems in computer science
-			and provided me with the opportunity to analyze, compare, and apply various mathematical methods to address specific issues.
-		</p>
+		<div class="research">
+			<img class="research-img" src = "images/Research/9_four_der.png" />
+			<div class="research-text h5-text">
+				This undergraduate research experience allowed me to apply mathematical ideas to solve problems in computer science<br/>
+				and provided me with the opportunity to analyze, compare, and apply various mathematical methods to address specific issues.
+			</div>
+		</div>
 	</div>
 
 	<footer>
@@ -116,10 +136,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center">
-						<p>Copyright 2016 Free Html5 Neos</p>
+						<p>Copyright 2016 Free Html5 Neos & Hanwool Huh</p>
 						<p class="fh5co-social-icons">
 							<a href="https://github.com/hanwoolsky"><i class="icon-github-with-circle"></i></a>
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>

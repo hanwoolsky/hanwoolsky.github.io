@@ -27,7 +27,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<link rel="stylesheet" href="css/screens/extra.css"> <!-- 내가 넣은 것 -->
+	<link rel="stylesheet" href="css/screens/extra.css"> <!-- custom -->
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -37,7 +37,7 @@
 	<header>
 		<div class="container text-center">
 			<div class="fh5co-navbar-brand">
-				<a class="fh5co-logo" href="index.html">EXTRACURRICULAR</a>
+				<a class="fh5co-logo" href="Extra.html">EXTRACURRICULAR</a>
 			</div>
 			<nav id="fh5co-main-nav" role="navigation">
 				<ul>
@@ -55,7 +55,7 @@
 				<!-- 1. Computer Graphics Planet -->
 				<div class="col-md-4 col-sm-6">
 					<div class="fh5co-grid-work">
-						<div class="work-holder"><!--  / Github에 코드가 있는 모든 활동들 Web Page, APP, COVID Dashboard 등등 / 언어별 프로젝트? Github 링크? -->
+						<div class="work-holder">
 							<a href="#" class="open-modal" data-target="#projectModal1"><img class="extra-img" src="images/CG_Earth.png" alt="Graphics"></a>
 							<a href="#" class="inner-overlay open-modal" data-target="#projectModal1"><i class="icon-plus"></i></a>
 						</div>
@@ -68,12 +68,12 @@
 				<div class="modal" id="projectModal1">
 					<div class="modal-content">
 						<span class="close" data-target="#projectModal1">&times;</span>
-						<h2>Computer Graphics</h2>
-						<p>
+						<div class="extra-modal-title">Computer Graphics</div>
+						<div class="extra-modal-text">
 							Computer graphics is a fundamental tool for creating and manipulating visual media including games, animation, virtual reality and web.<br/>
 							From implementing a simple 2D animation of circles, I developed my code to Geometric modeling of a 3D sphere,<br/>
 							3D transformations with camera interaction and shading / textures / normal mapping.
-						</p>
+						</div>
 						<a href="https://github.com/hanwoolsky/Solar_System_Graphics" class="pop-up-overlay pop-up-overlay-color-2 text-center">source code</a><br/>
 						<iframe width = "600" height = "400" src = "./video/Moving_Circle.mp4"></iframe>
             			<iframe width = "600" height = "400" src = "./video/Planet_in_Space.mp4"></iframe>
@@ -99,10 +99,10 @@
 				<div class="modal" id="projectModal2">
 					<div class="modal-content">
 						<span class="close" data-target="#projectModal2">&times;</span>
-						<h2>Graphic Game</h2>
+						<div class="extra-modal-title">Graphic Game</div>
 						<iframe width = "600" height = "400" src = "./video/Graphics_Presentation.mp4"></iframe><br/>
-						<p>Presenter : Hanwool Huh</p>
-						<p>The goal of this team project is implementing a game that uses OpenGL for main graphics API.</p>
+						<div class="extra-modal-mini-text extra-presenter">Presenter : Hanwool Huh</div>
+						<div class="extra-modal-text">The goal of this team project is implementing a game that uses OpenGL for main graphics API.</div>
 						<a href="https://github.com/hanwoolsky/Woori-s_Adventure" class="pop-up-overlay pop-up-overlay-color-2 text-center">source code</a>
 					</div>
 				</div>
@@ -123,14 +123,22 @@
 				<div class="modal" id="projectModal3">
 					<div class="modal-content">
 						<span class="close" data-target="#projectModal3">&times;</span>
-						<h2>3D Modelling</h2>
-						<img class="modal-img" src="images/3D/little_prince_formula.jpg" alt="The Little Prince">
-						<img class="modal-img" src="images/3D/little_prince.jpg" alt="The Little Prince">
-						<p>When I first encountered 3D modeling, I was fascinated by how mathematical formulas could approximate and create real shapes.<br/>This experience inspired me to pursue a double major in software.</p>
+						<div class="extra-modal-title">3D Modelling</div>
+						<div class="extra-3d">
+							<img class="modal-img" src="images/3D/little_prince_formula.jpg" alt="The Little Prince">
+							<img class="modal-img" src="images/3D/little_prince.jpg" alt="The Little Prince">
+							<div class="extra-modal-text">
+								When I first encountered 3D modeling, I was fascinated by how mathematical formulas could approximate and create real shapes.<br/>
+								This experience inspired me to pursue a double major in software.
+							</div>
+						</div>
+
+						<div class="extra-3d">
+							<img class="modal-img" src="images/3D/NTU_present.jpg" alt="Presentation">
+							<div class="extra-modal-text">My interest in 3D printing led me to participate in a team project at Nanyang Technological University in Singapore.</div>
+						</div>
 						
-						<img class="modal-img" src="images/3D/NTU_present.jpg" alt="Presentation">
-						<p>My interest in 3D printing led me to participate in a team project at Nanyang Technological University in Singapore.</p>
-						
+						<div class="extra-3d">
 						<img class="modal-img" src="images/3D/dot_custom.png" alt="DOT" style="
 							border-top: 2px solid black; 
 							border-right: 0; 
@@ -138,9 +146,10 @@
 							border-left: 0;
 						">
 						<img class="modal-img" src="images/3D/dot.jpg" alt="DOT">
-						<p>Created a Braille Display for the visually impaired, which earned me an award at a national 3D printing competition.</p>
-						
-						<p>What started as a simple interest in a program significantly influenced my career path, turning my small experiences into significant opportunities.<br/>This journey taught me that putting effort into even the smallest tasks can lead to unexpected and valuable opportunities.</p>
+						<div class="extra-modal-text">Created a Braille Display for the visually impaired, which earned me an award at a national 3D printing competition.</div>
+						</div>
+
+						<div class="extra-modal-text">What started as a simple interest in a program significantly influenced my career path, turning my small experiences into significant opportunities.<br/>This journey taught me that putting effort into even the smallest tasks can lead to unexpected and valuable opportunities.</div>
 					</div>
 				</div>
 
@@ -160,11 +169,13 @@
 				<div class="modal" id="projectModal4">
 					<div class="modal-content">
 						<span class="close" data-target="#projectModal4">&times;</span>
-						<h2>Smart Medication System</h2>
+						<div class="extra-modal-title">Smart Medication System</div>
 						<iframe width = "600" height = "400" src = "./video/Project_Video.mp4"></iframe><br/>
-						<p>I have observed instances where people forget to take their medication or unknowingly combine medications that should not be taken together,<br/> which can be dangerous. To address this issue, I developed a system that automatically records medication intake and provides information about the medications.</p>
-
-						<p>Presenter : Jaehun Jung</p>
+						<div class="extra-modal-mini-text extra-presenter">Presenter : Jaehun Jung</div>
+						<div class="extra-modal-text">
+							I have observed instances where people forget to take their medication or unknowingly combine medications that should not be taken together, which can be dangerous. <br/>
+							To address this issue, I developed a system that automatically records medication intake and provides information about the medications.
+						</div>
 					</div>
 				</div>
 
@@ -184,8 +195,8 @@
 				<div class="modal" id="projectModal5">
 					<div class="modal-content">
 						<span class="close" data-target="#projectModal5">&times;</span>
-						<h2>Book Publication</h2>
-						<p>I wrote a book on the topic, "How Can We Achieve Happiness? What Are the Boundaries of Respecting Freedom?"</p>
+						<div class="extra-modal-title">Book Publication</div>
+						<div class="extra-modal-text">I wrote a book on the topic, "How Can We Achieve Happiness? What Are the Boundaries of Respecting Freedom?"</div>
 						<a href="https://www.yes24.com/Product/Goods/124436070" class="pop-up-overlay pop-up-overlay-color-2 text-center">Book</a>
 					</div>
 				</div>
@@ -206,22 +217,22 @@
 				<div class="modal" id="projectModal6">
 					<div class="modal-content">
 						<span class="close" data-target="#projectModal6">&times;</span>
-						<h2>Security</h2>
+						<div class="extra-modal-title">Security</div>
 						<img class="modal-img" src="images/login_page.png" alt="Presentation">
-						<p>
+						<div class="extra-modal-text">
 							To deeply understand how websites work, I developed my own website using PHP while learning about web vulnerabilities.<br/>
 							Building a site with various features gave me valuable insights into web structures.<br/>
 							This hands-on experience helped me understand where and why vulnerabilities occur.
-						</p>
+						</div>
 						<a href="https://github.com/hanwoolsky/Web_Security" class="pop-up-overlay pop-up-overlay-color-2 text-center">source code</a>
 
-						<p>
+						<div class="extra-modal-text">
 							Throughout the development, I posted daily study updates.<br/>
 							This practice enhanced my understanding and communication skills, as explaining concepts to others required a higher level of clarity.
-						</p>
+						</div>
 						<a href="https://hanuscrypto.tistory.com/" class="pop-up-overlay pop-up-overlay-color-2 text-center">Technical Blog</a>
 
-						<p>I also organized Capture The Flag (CTF) events.</p>
+						<div class="extra-modal-text">I also organized Capture The Flag (CTF) events.</div>
 					</div>
 				</div>
 	</div>
@@ -231,10 +242,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center">
-						<p>Copyright 2016 Free Html5 Neos</p>
+						<div class="extra-modal-text">Copyright 2016 Free Html5 Neos & Hanwool Huh</div>
 						<p class="fh5co-social-icons">
 							<a href="https://github.com/hanwoolsky"><i class="icon-github-with-circle"></i></a>
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>

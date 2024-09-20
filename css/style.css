@@ -281,11 +281,11 @@ header #fh5co-main-nav > ul li:first-child {
 .owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-next i,
 .owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-prev i {
   font-size: 50px;
-  color: #fff;
+  color: #000;
 }
 .owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-next:hover i,
 .owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-prev:hover i {
-  color: #fff;
+  color: #000;
 }
 
 .owl-carousel .owl-controls .owl-nav .owl-next i,
