@@ -13,10 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
             var targetModal = document.querySelector(targetModalId);
             if (targetModal) {
                 targetModal.style.display = 'block';
-
-                const videoFrame = targetModal.querySelector('iframe');
-                const videoSrc = videoFrame.getAttribute('src'); // src
-                videoFrame.src = videoSrc; // set src
             }
         });
     });
@@ -31,8 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
             var targetModal = document.querySelector(targetModalId);
             if (targetModal) {
                 targetModal.style.display = 'none';
-                const videoFrame = targetModal.querySelector('iframe');
-                videoFrame.src = ''; // video pause
+
+                const video = targetModal.querySelector('video');
+                if (video) {
+                    video.pause(); // pause video
+                    video.currentTime = 0; // position initial
+                }
             }
         });
     });
@@ -42,8 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
         modals.forEach(function(modal) {
             if (event.target === modal) {
                 modal.style.display = 'none';
-                const videoFrame = modal.querySelector('iframe');
-                videoFrame.src = ''; // video pause
+
+                const video = modal.querySelector('video');
+                if (video) {
+                    video.pause(); // pause video
+                    video.currentTime = 0; // position initial
+                }
             }
         });
     });
